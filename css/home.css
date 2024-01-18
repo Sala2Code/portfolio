@@ -1,0 +1,62 @@
+@import url('variables.css');
+
+
+#home {
+    position: relative;
+    background: radial-gradient(at center bottom, var(--color-primary-10), black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Hauteur totale de la fenêtre de visualisation */
+}
+
+#div_home_content {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'PlayFairDisplay', serif;
+    font-size: 7rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#sub_txt{
+    font-family: 'PlayFairDisplay', serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin: 0.5em 0;
+    letter-spacing: 0.15em; 
+    text-transform: uppercase;
+
+}
+
+#home_presentation{
+    margin-top:3vh;
+    width: 80vw;
+}
+
+#but_discover_more {
+    width: 30%;
+    padding: 3vh 4vw;
+    margin-top: 15vh;
+
+}
+
+@media (max-width: 856px) {
+    h1 {
+        font-size: 3.5rem; 
+    }
+    #home_presentation{
+        margin-top:8vh;
+    }
+    #but_discover_more {
+        width: 80%;
+    }
+}

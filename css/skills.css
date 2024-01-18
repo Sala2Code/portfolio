@@ -1,0 +1,130 @@
+
+#skills { 
+    background: radial-gradient(at center bottom, var(--color-primary-10), black);
+    display: block;
+    padding-top: 5em;
+    max-height: 100vh;
+}
+  
+    
+.title_skills {
+    width: 100vw;
+    height:auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1.6em 0;
+    grid-gap: 1em;
+    max-width: 40%;
+    margin:2vh auto;
+}
+.title_skills:after,.title_skills:before {
+    content: " ";
+    display: block;
+    border-bottom: 0.1em solid white;
+  }
+  
+.content_logo {
+    width: 50%;
+    margin: 0 auto;
+}
+.logo_col{
+    height:10vh; 
+}
+.logo_2col{
+    height:20vh; 
+}
+.content_but {
+  position: relative; 
+  width: 60%;
+  height: 10vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin-top:4vh;
+}
+  
+  .content_but::before {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%); 
+    width: 0.1em;
+    background-color: white; 
+    transform: rotate(90deg);
+  }
+  
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .div_logo {
+    background: 
+        radial-gradient(var(--color-primary-11), var(--color-primary-12)) padding-box,
+        linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+    border: 0.15em solid transparent;
+    width:9vh;
+    height:9vh;
+    border-radius:1em;
+    transition: all 0.3s ease;
+    margin:.5vh;
+
+    
+  }
+  .div_logo:hover{
+    transform:scale(1.05);
+  }
+
+  .div_logo img{
+    margin:10%;
+    width:80%;
+    height:80%;
+  }
+
+
+.logo_slide {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex; 
+  background-color: green;
+  width: 10vh;
+  height: 10vh;
+  margin: 0 5em;
+  border-radius:1em;
+  background: 
+      radial-gradient(var(--color-primary-11), var(--color-primary-12)) padding-box,
+      linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+  border: 0.15em solid transparent;
+  transition:all 0.5s ease;
+}
+
+.logo_slide:hover{
+  transform: scale(1.05); 
+}
+
+@media (max-width: 856px ) {
+  .title_skills{
+    display: block;
+    font-size: 1em;
+    margin:4vh auto;
+    max-width: 100%;
+  }
+
+  .title_skills:after,.title_skills:before {
+    border-bottom: 0em solid white;
+  }
+
+  .div_logo{
+    width:15vw;
+    height: 15vw;
+  }
+
+
+}

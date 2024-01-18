@@ -1,0 +1,262 @@
+#aboutMe { 
+    background: linear-gradient(var(--color-primary-10-5), var(--color-primary-11));
+  }
+
+
+#div_aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100vh;
+    flex: 0 0 45%;
+}
+
+#hex_presentation {
+    flex: 0 0 35%;
+}
+
+ol.even {
+    margin:.5em;
+    position: relative;
+    left: calc((var(--hex-size) / 1.12));
+}
+ol.odd {
+    margin:.5em;
+
+    position: relative;
+    margin-top: calc(-.5*var(--hex-size));
+    margin-bottom:calc(-.5*var(--hex-size));
+}
+.hex {
+    position: relative;
+    margin:  calc(0.125*var(--hex-size)) 0;
+    width: var(--hex-size) ;
+    height: calc(var(--hex-size) * 1.7);
+    border-radius: 0.5em;
+    background: var(--color-primary-12);
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: calc(var(--hex-size) / 1.30);
+    transition: all 0.15s ease-in-out;
+
+    border: solid var(--color-primary-8) 0.15em;
+    border-style: solid none;
+}
+.hex:before, .hex:after {
+    position: absolute;
+    width: inherit; height: inherit;
+    border-radius: inherit;
+    background: inherit;
+    content: '';
+
+
+    border: solid var(--color-primary-8) 0.15em;
+    border-style: solid none;
+}
+.hex:before {
+    transform: rotate(60deg);
+}
+.hex:after {
+    transform: rotate(-60deg);
+}
+.hex:hover {
+    background: var(--color-primary-12);
+    cursor: pointer;
+}
+.hex:hover .p_txt_abilities{
+    letter-spacing: 0.16em;
+}
+.hex div{
+    position: absolute;
+    transform: rotate(90deg);
+    z-index:1;
+    width: calc(var(--hex-size) * 1.7);
+    height: var(--hex-size);
+    max-width: calc(var(--hex-size) * 1.7);
+    max-height: var(--hex-size);
+    margin:  calc(  var(--hex-size)/3 )  calc(  var(--hex-size)/(-3 )) ;
+    margin-right: calc(var(--hex-size) / 1.30);
+    padding:0.2em 0;
+}
+.hex div::-webkit-scrollbar, .pres::-webkit-scrollbar {
+    display: none;
+}
+.div_quote{
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.quote{
+    font-size: 1.6em; 
+    font-family: "FairPlayDisplay_quote", serif;
+    color:white;
+    display: inline-flex;
+}
+
+.hex div img{
+    display: inline-block;
+    width: 100%;
+    height:var(--hex-size); 
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+}
+
+.hex .inline-img img{
+    display: inline-block;
+    width: 40%;
+    height:var(--hex-size); 
+    margin: 4%;
+    padding: 0;
+    opacity: 0.9;
+}
+
+
+.pres-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    height:auto;
+}
+.pres-section:nth-child(1){
+    max-height: 40vh;
+}.pres-section:nth-child(2){ 
+    max-height: 30vh;
+}.pres-section:nth-child(3){
+    max-height: 25vh;
+}
+
+.pres-section h2 {
+    font-family: 'PlayFairDisplay', serif;
+    font-size: 1.5rem; 
+    color: white;
+    margin: 0.5em 0;
+    letter-spacing: 0.15em; 
+    text-transform: uppercase;
+    transition: letter-spacing .5s ease-in-out;
+    display: inline-flex;
+
+    text-align: left;
+    margin-left:1em;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        margin-left: 1em;
+        border-top: 0.1em solid #ccc;
+      }
+}
+.aboutme_p{
+    text-align: left;
+    text-indent: 3em;
+}
+.pres{
+    margin-top:0;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.studies_lvl{
+    display: flex;
+    flex-direction: row;
+    margin: 1vh;
+    padding: 0;
+    height: 10vh;
+    width: 95%;
+}
+
+.studies_p{
+    display:inline-block;
+    width:75%;
+    height:10vh;
+}
+
+
+.studies_progress{
+    display:inline-block;
+    width:25%;
+    height:10vh;
+}
+
+.progressCircle[role="progressbar"] {
+    width: 3.2em;
+    height: 3.2em;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: .1em auto;
+    background: /* ! PERCENTAGE */
+        radial-gradient(closest-side, var(--color-primary-12) 90%, transparent 0 100%, var(--color-primary-12) 0),
+        conic-gradient(var(--color-primary-4) calc(var(--value)*1%), #2e2e2e 0); 
+    font-family:  'Butler', serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.progressCircle[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}
+
+#hex_see_projects:hover p{
+    letter-spacing: 0.2em;
+}
+#hex_see_projects:hover .symbol{
+    transform: translateY(0.2em);
+}
+
+#div_arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbol{
+    font-size: 2.5em;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@media (max-width: 856px) { 
+    #div_aboutme{
+        max-height: 300vh;
+        flex-basis: 80%;
+    }
+
+    #hex_presentation{
+        display: none;
+    }
+
+    .studies_p{
+        display:inline-block;
+        text-align: center;
+        width: 100%;
+    }
+    .studies_progress{
+        display:none;
+    }
+
+    .pres{
+        overflow-y:visible;
+    }
+    .pres-section:nth-child(1){
+        max-height: 80vh;
+    }.pres-section:nth-child(2){ 
+        max-height: 60vh;
+    } .pres-section:nth-child(3){
+        max-height: 50vh;
+    }
+    
+}
+
+
+

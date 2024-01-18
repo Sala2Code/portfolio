@@ -1,0 +1,92 @@
+.borderWave_back{
+  position: fixed;
+  height:inherit;
+  width:10vw; 
+  top:0;
+  z-index: 1;
+}
+
+.borderWave_left.borderWave_back{
+  background: linear-gradient(to right, var(--color-primary-11) 40%, var(--color-primary-10));
+  left:0;
+  --mask:
+  radial-gradient(calc(2.24*var(--sizeWave)) at calc(100% - 3*var(--sizeWave)) 50%,#000 99%,#0000 101%) 0 calc(50% - 2*var(--sizeWave))/100% calc(4*var(--sizeWave)),
+  radial-gradient(calc(2.24*var(--sizeWave)) at calc(100% + 2*var(--sizeWave)) 50%,#0000 99%,#000 101%) calc(100% - var(--sizeWave)) 50%/100% calc(4*var(--sizeWave)) repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.borderWave_right.borderWave_back {
+  background: linear-gradient(to left, var(--color-primary-11) 40%, var(--color-primary-10));
+
+  right:0;
+  --mask:
+    radial-gradient(calc(2.24*var(--sizeWave)) at calc(3*var(--sizeWave)) 50%,#000 99%,#0000 101%) 0 calc(50% - calc(2*var(--sizeWave)))/100% calc(4*var(--sizeWave)),
+    radial-gradient(calc(2.24*var(--sizeWave)) at calc(-2*var(--sizeWave)) 50%,#0000 99%,#000 101%) var(--sizeWave) 50%/100% calc(4*var(--sizeWave)) repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+
+
+.borderWave_mid{
+  position: fixed;
+  height:inherit;
+  width:8.5vw;  
+  top:0;
+  z-index: 2;
+}
+
+.borderWave_left.borderWave_mid{
+  background: linear-gradient(to right, var(--color-primary-10) 40%, var(--color-primary-9));
+  left:0;
+  --mask:
+  radial-gradient(calc(1.5*1.84*var(--sizeWave)) at calc(100% - 1.5*2.55*var(--sizeWave)) 50%,#000 99%,#0000 101%) 0 calc(50% - 1.5*2*var(--sizeWave))/100% calc(1.5*4*var(--sizeWave)),
+  radial-gradient(calc(1.5*1.84*var(--sizeWave)) at calc(100% + 1.5*1.55*var(--sizeWave)) 50%,#0000 99%,#000 101%) calc(100% - 1.5*var(--sizeWave)) 50%/100% calc(1.5*4*var(--sizeWave)) repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+
+.borderWave_right.borderWave_mid {
+  background: linear-gradient(to left, var(--color-primary-10) 40%, var(--color-primary-9));
+  right:0;
+  --mask:
+    radial-gradient(calc(1.5*1.84*var(--sizeWave)) at calc(1.5*2.55*var(--sizeWave)) 50%,#000 99%,#0000 101%) 0 calc(50% - 1.5*calc(2*var(--sizeWave)))/100% calc(1.5*4*var(--sizeWave)),
+    radial-gradient(calc(1.5*1.84*var(--sizeWave)) at calc(1.5*-1.55*var(--sizeWave)) 50%,#0000 99%,#000 101%) calc(1.5*var(--sizeWave)) 50%/100% calc(1.5*4*var(--sizeWave)) repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+
+.borderWave_top{
+  position: fixed;
+  height:inherit;
+  width:6vw;  /* TODO  : responsive design */
+  background-color: var(--color-primary-9);
+  top:0;
+  z-index: 3;
+}
+
+.borderWave_left.borderWave_top{
+  background: linear-gradient(to right, var(--color-primary-9) 30%, var(--color-primary-8));
+  left:0;
+  --mask:
+  radial-gradient(calc(2*1.84*var(--sizeWave)) at calc(100% - 2*2.55*var(--sizeWave)) 50%,#000 99%,#0000 101%) 0 calc(50% - 2*2*var(--sizeWave))/100% calc(2*4*var(--sizeWave)),
+  radial-gradient(calc(2*1.84*var(--sizeWave)) at calc(100% + 2*1.55*var(--sizeWave)) 50%,#0000 99%,#000 101%) calc(100% - 2*var(--sizeWave)) 50%/100% calc(2*4*var(--sizeWave)) repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+
+.borderWave_right.borderWave_top {
+  background: linear-gradient(to left, var(--color-primary-9) 30%, var(--color-primary-8));
+  right:0;
+  --mask:
+    radial-gradient(calc(2*1.84*var(--sizeWave)) at calc(2*2.55*var(--sizeWave)) 50%,#000 99%,#0000 101%) 0 calc(50% - 2*calc(2*var(--sizeWave)))/100% calc(2*4*var(--sizeWave)),
+    radial-gradient(calc(2*1.84*var(--sizeWave)) at calc(2*-1.55*var(--sizeWave)) 50%,#0000 99%,#000 101%) calc(2*var(--sizeWave)) 50%/100% calc(2*4*var(--sizeWave)) repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+

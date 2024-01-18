@@ -1,0 +1,131 @@
+@import url('variables.css');
+
+*{
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+  height: 500vh;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: white;  
+}
+
+.category {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.split-diagonal {
+  position: absolute;
+  height:20vh;
+  width:100vw;
+}
+
+.tri_top {
+  clip-path: polygon(0 0, 100% 0, 100% 75%);
+  top:0;
+  background-color: var(--color-primary-11);
+}
+.tri_color_lr{
+  background: linear-gradient(to right, var(--color-primary-12), var(--color-primary-10-5));
+}
+
+.tri_bottom {
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+  bottom:0;
+  background-color: var(--color-primary-10-5);
+}
+
+.txt {
+  font-family: 'Butler', serif;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.txt_upper {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 0;
+  }
+  
+  .txt_blue {
+  color: var(--color-primary-3);
+  }
+  
+  .p_txt {
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+  letter-spacing: 0.15em; 
+  text-indent: .1em;  
+  }
+  
+.p_txt_quote {
+  font-family: 'Butler_quote', serif;
+  font-size: 0.7rem;
+  text-indent: .1em;
+  text-align: left;
+}
+  
+.p_txt_spe {
+  font-size: 1em;
+  margin: 0.2em 0;
+}
+.p_txt_abilities {
+  font-size: 1.2em;
+  margin: 0.2em 0;
+}
+.p_txt_desc{
+  font-size: 1em;
+  text-align: left;
+  text-indent: 2em;
+}
+.h2_txt_skills{
+  font-size: 2.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'PlayFairDisplay', serif;
+}
+ 
+  
+.txt_button {
+  font-family: 'PlayFairDisplay', serif;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  transition: letter-spacing .5s ease-in-out;
+}
+  
+.txt_button:hover {
+  letter-spacing: 0.2em;
+}
+  
+.button {
+  background: linear-gradient(to right, var(--color-primary-12), var(--color-primary-13) ) padding-box,
+  linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+  border: 0.1em solid transparent;
+  border-radius: 100vw;
+  cursor: pointer;
+  transition: all 0.5s ease !important;
+}

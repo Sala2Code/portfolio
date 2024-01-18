@@ -1,0 +1,57 @@
+:root{
+  --color-primary-1: #eff8ff;
+  --color-primary-2: #dff1ff;
+  --color-primary-3: #b8e4ff;
+  --color-primary-4: #78cfff;
+  --color-primary-5: #3dbbff;
+  --color-primary-6: #069ef1;
+  --color-primary-7: #007dce;
+  --color-primary-8: #0064a7;
+  --color-primary-9: #02548a;
+  --color-primary-10: #084672;
+  --color-primary-11: #062c4b;
+  --color-primary-12: #041d2e;
+  --color-primary-13: #020f15;
+  
+  --color-primary-10-5: #124e81;
+
+  --sizeWave:3.5vh;
+  --hex-size: 7.5vw;
+}
+
+
+.isMobile{
+  display: none !important;
+}
+.isComputer{
+  display:inherit !important;
+}
+
+@media (max-width: 856px ) {
+  :root{
+    --sizeWave:2vh;
+    --hex-size: 16vw;
+  }
+
+  .isMobile{
+    display: inherit !important;
+  }
+  .isComputer{
+    display: none !important;
+  }
+}
+  
+@font-face {
+  font-family: 'Butler';
+  src: url('../res/fonts/Butler-Med.otf');
+}
+
+@font-face {
+  font-family: 'PlayFairDisplay';
+  src: url('../res/fonts/PlayfairDisplay-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Butler_quote';
+  src: url('../res/fonts/Butler-Lgt.otf');
+}

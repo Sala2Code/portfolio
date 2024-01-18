@@ -1,0 +1,309 @@
+#projects {
+    background: linear-gradient(to right, var(--color-primary-12), var(--color-primary-10-5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.h2_title{
+    font-family: 'PlayFairDisplay', serif;
+    font-size: 3.5rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    margin-top:10vh;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.div_filters {
+    background-color: blue;
+    width: 60%;
+    height:15vh;
+    margin: 0 auto;
+    text-align: center;
+    margin : 3em;
+}
+
+
+
+#projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.div_projects {
+    position: relative; /* Establish this as the parent positioning context */
+    display: flex;
+    width: 100%;
+    height: 15em;
+    margin: 1em;
+}
+
+.div_projects div, .div_projects a{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.title {
+    position: absolute; 
+    top: 0;
+    width: auto;
+    padding: 0 0.5em;
+    min-width: 20%;
+    max-width: 40%;
+    max-height:4em;
+    z-index: 2;
+    border-radius: 1em;
+    background: 
+        linear-gradient(to right, var(--color-primary-12), var(--color-primary-12) ) padding-box,
+        linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+    border: 0.1em solid transparent;
+    align-items: center;    
+}
+.title_project{
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content {
+    position: relative;
+    width: calc(100% - 23em);
+    z-index: 1;
+    max-height: 10em;
+    /* margin: 2.5em 0 2.5em 10%; */
+    border-radius: 2em;
+    background: 
+        linear-gradient(to right, var(--color-primary-11), var(--color-primary-11) ) padding-box,
+        linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+    border: 0.1em solid transparent;
+}  
+.content_left{
+    padding-right: 5em;
+    margin: 2.5em 0 2.5em 10%;
+
+
+}
+.content_right{
+    padding-left: 5em;
+    margin: 2.5em 0 2.5em calc(10% + 7.5em);
+}
+
+
+.span_corner{
+    position: absolute;
+    top:0;
+} 
+.span_right{
+    right:4em;
+}
+.span_left{
+    left:4em;
+}
+
+.p_desc{
+    margin : 2.25em .5em;
+    max-height: 3.6em;
+    overflow : hidden;
+}
+
+.image {
+    position: absolute;
+    width: 15em;
+    z-index: 2;
+}
+.pos_left{
+    left:0;
+}
+.pos_right{
+    right:0;
+}
+
+.img_project{
+    width:100%;
+    border-radius: 1em;
+}
+
+.link_github{
+    position: absolute;
+    width:4.5em;
+    max-height:4.5em;
+    margin:auto 0;
+    bottom: 0;
+    border-radius: 50%;
+    z-index:2;
+    background: 
+        linear-gradient(to right, var(--color-primary-11), var(--color-primary-11) ) padding-box,
+        linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+    border: 0.1em solid transparent;
+    transition:all 0.25s ease;
+}
+.link_github:hover{
+    width:4.75em;
+    max-height: 4.75em;
+    bottom: -0.125em;
+}
+.github_left{
+    left:calc(50% - 5em - 2.25em);
+}
+.github_right{
+    right:calc(50% - 5em - 2.25em);
+}
+.github_left:hover{
+    left:calc(50% - 5em - 2.25em - 0.125em);
+}
+.github_right:hover{
+    right:calc(50% - 5em - 2.25em - 0.125em);
+}
+
+.div_lang{
+    width:auto;
+    max-height:3em;
+    padding : 0 0.5em;
+    align-items: center;
+    border-radius: 2em;
+    margin : 0 0.2em;
+    background: 
+        linear-gradient(to right, var(--color-primary-12), var(--color-primary-12) ) padding-box,
+        linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+    border: 0.1em solid transparent;
+}
+.content_lang{
+    position: absolute;
+    bottom:0;
+    max-height: 3em;
+    margin: .5em 0;
+}
+
+.slide{
+    position: fixed;
+    width: 5em;
+    height: 5em;
+    background-color: red;
+    z-index: 99;
+    bottom: 1em;
+    border-radius: 50%;
+    margin:0;
+    align-items: center;
+    justify-content: center;
+    background: 
+        radial-gradient(var(--color-primary-11), var(--color-primary-13) ) padding-box,
+        linear-gradient(to right, var(--color-primary-7), var(--color-primary-8)) border-box;
+    border: 0.1em solid transparent;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, 0.85);
+}
+#slide_up{
+    left:calc(50% + 2em );
+}
+#slide_down{
+    right:calc(50% + 2em);
+}
+
+.slide:hover{
+    width: 5.5em;
+    height: 5.5em;
+    bottom: 0.75em;
+}
+
+#slide_up:hover{
+    left:calc(50% + 1.75em );
+}
+#slide_down:hover{
+    right:calc(50% + 1.75em );
+}
+
+.slide p{
+    font-size: 2em;
+}
+
+@media (max-width: 856px ) {
+    #projects-container{
+        width: 80%;
+    }
+
+    .div_projects {
+        height: auto;
+        margin: 1em;
+        padding-bottom: 80%;
+        margin-bottom:50%;
+    }
+    
+    .div_projects div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .title {
+        width: 100%;
+        max-width:100%;
+        padding: 0 0; 
+    }
+    .title_project{
+        max-width: 100%;
+    }
+    
+    .content {
+        width: 80%;
+        height:auto;
+        max-height: auto;
+        margin : 0 auto;
+        padding: 10em 0 12em 0;
+    }  
+    .span_corner{
+        position:relative;  
+        left: 0;
+    } 
+
+    .p_desc{
+        margin: 0.2em;
+        max-height: 30em;
+        height:30em;
+        overflow: visible;
+    }
+    
+    .image {
+        bottom:-35%;    
+        left:5%;
+        width: 90%;
+        height:90%;
+    }
+    
+    .img_project{
+        width:100%;
+        border-radius: 1em;
+    }
+    
+    .link_github{
+        position: absolute;
+        width:5em;
+        max-height:5em;
+        margin:auto 0;
+        left:calc(50% - 2.5em);
+        bottom: 2%;
+        transition: none;
+    }
+
+    .content_lang{
+        position: relative;
+        right:0;
+        left:0;
+        margin: 0;
+        padding:2em;
+    }    
+    
+    .div_lang{
+        width:auto;
+        max-height:auto;
+        padding : 0 0.5em;
+        align-items: center;
+        border-radius: 2em;
+        margin : 0.1em 0em;
+    }
+}

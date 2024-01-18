@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Portfolio",
+      "desc": "This portfolio displays my skills on a single-page website with responsive design, developed using pure vanilla HTML, CSS, and JavaScript.",
+      "lang": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "img": "Portfolio.png",
+      "date": "Jan. 2024",
+      "type": "Personal"
+    },
+    {
+      "name": "MicroBenchmark-Julia-MATLAB-Python",
+      "desc": "This benchmark compares the execution times of dynamic languages in scientific computing. It provides insights into the use of programming languages in scientific tasks.",
+      "lang": [
+        "Julia",
+        "MATLAB",
+        "Python"
+      ],
+      "img": "MicroBenchmark-Julia-MATLAB-Python.png",
+      "date": "Aug. 2023",
+      "type": "Professional"
+    },
+    {
+      "name": "Noise-Perlin-Cellular",
+      "desc": "This project implements Perlin and Cellular (Voronoi) Noise in 2D/3D, interactively using OpenGL and ImGUI.",
+      "lang": [
+        "C++",
+        "GLSL"
+      ],
+      "img": "Noise-Perlin-Cellular.png",
+      "date": "July 2023",
+      "type": "Personal"
+    },
+    {
+      "name": "Interactive-Function-Approximation",
+      "desc": "Interactive approximation of continuous functions using Remes, Bernstein, and Fourier methods",
+      "lang": [
+        "Python",
+        "Julia",
+        "Lean"
+      ],
+      "img": "Interactive-Function-Approximation.png",
+      "date": "May 2023",
+      "type": "Scholar"
+    },
+    {
+      "name": "boids",
+      "desc": "Simulation of flocking behavior in boids, including a predator interaction.",
+      "lang": [
+        "C++",
+        "GLSL"
+      ],
+      "img": "boids.png",
+      "date": "Nov. 2022",
+      "type": "Personal"
+    },
+    {
+      "name": "Soft-Body",
+      "desc": "SFML Soft Body. You can draw your own structure easily. It also includes a model with an additional feature: pressure.",
+      "lang": [
+        "C++"
+      ],
+      "img": "Soft-Body.png",
+      "date": "July 2022",
+      "type": "Personal"
+    },
+    {
+      "name": "Raycasting",
+      "desc": "SFML raycasting, complete with textured graphics and a minimap.",
+      "lang": [
+        "C++"
+      ],
+      "img": "Raycasting.png",
+      "date": "Jul, 2022",
+      "type": "Personal"
+    }
+  ]
