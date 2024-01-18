@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     <a href="https://github.com/Sala2Code/${project.name}" target="_blank">
                         <div class="link_github isMobile">
-                            <img src="res/svg/github.svg" alt="github" class="img_github">
+                            <img src="res/svg/GitHub.svg" alt="github" class="img_github">
                         </div>
                     </a>
 
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
                 <a href="https://github.com/Sala2Code/${project.name}" target="_blank">
                     <div class="link_github github_${l_r(!even)}  isComputer">
-                        <img src="res/svg/github.svg" alt="github" class="img_github">
+                        <img src="res/svg/GitHub.svg" alt="github" class="img_github">
                     </div>
                 </a>
                 `;
