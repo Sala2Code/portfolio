@@ -75,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
             slide_up.style.opacity = '0'; 
             slide_down.style.visibility='hidden';
             slide_up.style.visibility='hidden';
-
-            console.log(window.scrollY);
             
             if(window.scrollY > 2.5*window.innerHeight ){
                 var targetElement = document.getElementById('skills');
@@ -87,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
         }
-    }, { threshold:.15 });
+    }, { threshold:.1 });
     
     observer.observe(observerTarget);
 });
