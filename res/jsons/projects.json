@@ -1,5 +1,16 @@
 [
     {
+      "name": "MonCraft",
+      "desc": "A Minecraft-like project developed without a game engine, featuring stunning shaders, realized through OpenGL 3.3",
+      "lang": [
+        "C++",
+        "GLSL"
+      ],
+      "img": "MonCraft.png",
+      "date": "Jan. 2024",
+      "type": "Personal"
+    },
+    {
       "name": "Portfolio",
       "desc": "This portfolio displays my skills on a single-page website with responsive design, developed using pure vanilla HTML, CSS, and JavaScript.",
       "lang": [
