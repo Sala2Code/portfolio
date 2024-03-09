@@ -1,5 +1,15 @@
 [
     {
+      "name": "EDA_Latex",
+      "desc": "Write an EDA to extract insights from a dataset and generate a PDF report with key findings and visualizations",
+      "lang": [
+        "C"
+      ],
+      "img": "EDA_Latex.png",
+      "date": "Mar. 2024",
+      "type": "Personal"
+    },
+    {
       "name": "MonCraft",
       "desc": "A Minecraft-like project developed without a game engine, featuring stunning shaders, realized through OpenGL 3.3",
       "lang": [
