@@ -1,5 +1,15 @@
 [
     {
+      "name": "Active-Learning-Model-Comparison-Thermite-Nanomaterials",
+      "desc": "Compares the performance of ML models to explore/exploit the design space of thermite nanomaterials.",
+      "lang": [
+        "Python"
+      ],
+      "img": "Nano.png",
+      "date": "Aug. 2024",
+      "type": "Professional"
+    },
+    {
       "name": "MonCraft",
       "desc": "A Minecraft-like project developed without a game engine, featuring stunning shaders, realized through OpenGL 3.3",
       "lang": [
