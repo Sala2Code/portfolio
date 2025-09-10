@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - SALA Raphaël</title>
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Portfolio minimal" />
+</head>
+<body>
+  <div class="bg-tiles" aria-hidden="true" property="parallax=4">
+    <img class="bg-tiles__img" src="assets/svg/tile.svg" alt="" />
+  </div>
+
+  <main class="panel" role="main">
+    <h1>SALA Raphaël</h1>
+
+    <section>
+      <h2>About me</h2>
+      <div class="about-cols">
+        <div class="about-text">
+          <p class="indent">
+                I am a 20 year old Master's student in Mathematics and Computer Science at University Paul Sabatier.
+                I focus on theoretical and computational aspects of optimization, numerical analysis and efficient learning methods relevant to AI.
+                I have completed optional research internships in respected labs and plan to pursue a PhD in these fields.
+                
+            </p>
+            <p class="indent">
+                
+                Recipient of the ANITI Graduate School Excellence Scholarship,
+                I am eager to join research oriented projects in applied mathematics for AI this summer and for the future. 
+
+                Don't hesitate to contact me, thank you for visiting my page.
+          </p>
+        </div>
+        <div class="cv-card">
+          <svg viewBox="-4 0 32 32" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+            <path fill="currentColor" d="M3 24h19v-23h-1v22h-18v1zm17-24h-18v22h18v-22zm-1 1h-16v20h16v-20zm-2 16h-12v1h12v-1zm0-3h-12v1h12v-1zm0-3h-12v1h12v-1zm-7.348-3.863l.948.3c-.145.529-.387.922-.725 1.178-.338.257-.767.385-1.287.385-.643 0-1.171-.22-1.585-.659-.414-.439-.621-1.04-.621-1.802 0-.806.208-1.432.624-1.878.416-.446.963-.669 1.642-.669.592 0 1.073.175 1.443.525.221.207.386.505.496.892l-.968.231c-.057-.251-.177-.449-.358-.594-.182-.146-.403-.218-.663-.218-.359 0-.65.129-.874.386-.223.258-.335.675-.335 1.252 0 .613.11 1.049.331 1.308.22.26.506.39.858.39.26 0 .484-.082.671-.248.187-.165.322-.425.403-.779zm3.023 1.78l-1.731-4.842h1.06l1.226 3.584 1.186-3.584h1.037l-1.734 4.842h-1.044z"/>
+          </svg>
+          <a target="_blank" class="btn-accent" href="assets/pdf/cv.pdf" download>EN</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact-info">
+      <span>Email: <a target="_blank" href="mailto:contact.r.sala@gmail.com">contact.r.sala@gmail.com</a></span>
+      <span>Github: <a target="_blank" href="https://github.com/Sala2Code">Sala2Code</a></span>
+    </div>
+
+    <section>
+      <h2>Professional experiences</h2>
+      <div class="pro-cards pro-theme--rose">
+        <article class="pro-card has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">&#955;-QUT Regularization</span>
+            <div class="pro-card__meta">Switzerland, University of Geneva - 2025 Aug. (3 Months)</div>
+            <p class="pro-card__desc">
+                Presents a sparse recovery framework supporting non-convex penalties. 
+                Delivers reliable support recovery in high-dimensional settings with FDR control and scales to large learners, including deep neural networks.
+                Focuses on regression with a SQRT-RSS loss, enabling pivotal calibration of regularization parameters &lambda;.
+            </p>
+            <div class="pro-card__langs"><span class="pro-lang">Julia</span><span class="pro-lang">Python</span></div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Sala_QUT_SparseRecovery.pdf" download target="_blank">EN</a>
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/LambdaQUT_Regularization" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/transition_recovery_gradient.svg" alt="transition recovery logo" />
+          </figure>
+        </article>
+
+        <article class="pro-card pro-card--right has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Active Learning Model Comparison Thermite</span>
+            <div class="pro-card__meta">France, LAAS-CNRS — 2024 Aug. (3 Months)</div>
+            <p class="pro-card__desc">Compares the performance of Gaussian Process models to explore/exploit the design space of thermite nanomaterials.
+                Develops metrics to evaluate model performance in active learning settings.
+            </p>
+            <div class="pro-card__langs"><span class="pro-lang">Python</span></div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="https://dumas.ccsd.cnrs.fr/LAAS-SARA/hal-04694821v1" target="_blank" download>EN</a>
+
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/Active-Learning-Model-Comparison-Thermite-Nanomaterials" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/Nano.png" alt="Thermite nanomaterials surface" />
+          </figure>
+        </article>
+
+        <article class="pro-card pro-card--left has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">MicroBenchmark Julia MATLAB Python </span>
+            <div class="pro-card__meta">France, Toulouse Institute of Mathematics — 2023 Aug. (2 Months)</div>
+            <p class="pro-card__desc">This benchmark compares the execution times of dynamic languages in scientific computing.
+                It provides insights into the use of programming languages in scientific tasks.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">Julia</span>
+                <span class="pro-lang">MATLAB</span>
+                <span class="pro-lang">Python</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Benchmark_Julia_Python_MATLAB.pdf" target="_blank" download>FR</a>
+
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/MicroBenchmark-Julia-MATLAB-Python" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <!-- <img src="assets/projects/MicroBenchmark-Julia-MATLAB-Python.png" alt="Benchmark_Julia_Python_MATLAB" /> -->
+          </figure>
+        </article>
+
+
+
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p>Coming soon...</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+        <div class="pro-cards pro-theme--rose">
+
+        <article class="pro-card pro-card--right has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Stochastic Block Model</span>
+            <div class="pro-card__meta">2024 Jun.</div>
+            <p class="pro-card__desc">
+                Explores spectral community detection for a 2-block Stochastic Block Model.
+                Derives explicit non-asymptotic and asymptotic misclassification bounds in terms of p,q using Davis-Kahan and concentration tools.
+                Shows the noise spectrum follows semicircle scaling (via Girko/Stieltjes) and more.  
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">Python</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Rapport_SBM.pdf" download target="_blank">FR</a>
+
+            </div>
+            <!-- <a class="pro-card__github" href="https://github.com/Sala2Code/Interactive-Function-Approximation" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a> -->
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/sbm_logo.svg" alt="Graph 2-Stochastic Block Model" />
+          </figure>
+        </article>
+
+
+       <article class="pro-card pro-card--left has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">MonCraft</span>
+            <div class="pro-card__meta">2024 Jan.</div>
+            <p class="pro-card__desc">A Minecraft-like project developed without a game engine, featuring stunning shaders, realized through OpenGL 3.3.
+                It includes procedural terrain generation using Perlin noise, dynamic lighting.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">C++</span>
+                <span class="pro-lang">GLSL</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <!-- <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Benchmark_Julia_Python_MATLAB.pdf" download>FR</a> -->
+
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/MonCraft" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/MonCraft.png" alt="MonCraft's Illustration" />
+          </figure>
+        </article>
+
+        <article class="pro-card pro-card--right has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Noise Perlin Cellular</span>
+            <div class="pro-card__meta">2023 Jul.</div>
+            <p class="pro-card__desc">This project implements Perlin and Cellular (Voronoï) Noise in 2D/3D, interactively using OpenGL and ImGUI.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">C++</span>
+                <span class="pro-lang">GLSL</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <!-- <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Benchmark_Julia_Python_MATLAB.pdf" download>FR</a> -->
+
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/Noise-Perlin-Cellular" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/Noise-Perlin-Cellular.png" alt="Perlin Noise-Perlin-Cellular" />
+          </figure>
+        </article>
+
+        <article class="pro-card pro-card--left has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Interactive Function Approximation</span>
+            <div class="pro-card__meta">2023 May.</div>
+            <p class="pro-card__desc">
+                Interactive approximation of continuous functions using Remes, Bernstein, and Fourier methods.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">Julia</span>
+                <span class="pro-lang">Python</span>
+                <span class="pro-lang">Lean</span>
+
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Approximation_Uniforme.pdf" download target="_blank">FR</a>
+
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/Interactive-Function-Approximation" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/Interactive-Function-Approximation.png" alt="Interactive-Function-Approximation" />
+          </figure>
+        </article>
+
+        </article>
+           <article class="pro-card pro-card--right has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Boids</span>
+            <div class="pro-card__meta">2022 Nov.</div>
+            <p class="pro-card__desc">
+                Simulation of flocking behavior in boids, including a predator interaction.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">C++</span>
+                <span class="pro-lang">GLSL</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <!-- <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Approx_Func.pdf" download>FR</a> -->
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/boids" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/boids.png" alt="boids" />
+          </figure>
+        </article>
+
+        
+        </article>
+           <article class="pro-card pro-card--left has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Soft Body</span>
+            <div class="pro-card__meta">2022 Jul.</div>
+            <p class="pro-card__desc">
+                SFML Soft Body. You can draw your own structure easily. It also includes a model with an additional feature: pressure.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">C++</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <!-- <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Approx_Func.pdf" download>FR</a> -->
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/Soft-Body" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/Soft-Body.png" alt="Soft Body" />
+          </figure>
+        </article>
+
+         
+        </article>
+           <article class="pro-card pro-card--right has-image">
+          <div class="pro-card__content">
+            <span class="pro-card__title">Raycasting</span>
+            <div class="pro-card__meta">2022 Jul.</div>
+            <p class="pro-card__desc">
+                SFML raycasting, complete with textured graphics and a minimap.
+            </p>
+            <div class="pro-card__langs">
+                <span class="pro-lang">C++</span>
+            </div>
+            <div class="pro-card__downloads" aria-label="Download CV / report PDFs">
+              <!-- <img class="pdf-icon" src="assets/svg/pdf.svg" alt="PDF icon" />
+              <a class="pro-card__dl-btn" href="assets/pdf/Approx_Func.pdf" download>FR</a> -->
+            </div>
+            <a class="pro-card__github" href="https://github.com/Sala2Code/Raycasting" target="_blank" aria-label="Open on GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+          <figure class="pro-card__image">
+            <img src="assets/projects/Raycasting.png" alt="Raycasting" />
+          </figure>
+        </article>
+
+    </div>
+
+
+    </section>
+  </main>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Générateur de Portfolio",
+    "description": "Script qui scaffold un portfolio statique avec assets optimisés.",
+    "tags": ["HTML","CSS","JS"],
+    "image": "assets/img/sample-portfolio.jpg",
+    "links": {
+      "github": "https://github.com/username/portfolio-gen",
+      "demo": "https://example.com/portfolio-demo"
+    }
+  },
+  {
+    "title": "API Mini Notes",
+    "description": "Petite API REST pour créer et lister des notes.",
+    "tags": ["Node","Express","REST"],
+    "image": "assets/img/sample-api.jpg",
+    "links": {
+      "github": "https://github.com/username/mini-notes-api",
+      "doc": "https://example.com/mini-notes-doc"
+    }
+  },
+  {
+    "title": "Visualisation Données",
+    "description": "Dashboard interactif de stats (d3.js).",
+    "tags": ["D3","DataViz"],
+    "image": "assets/img/sample-dataviz.jpg",
+    "links": {
+      "github": "https://github.com/username/dataviz-dashboard",
+      "demo": "https://example.com/dataviz"
+    }
+  }
+]
