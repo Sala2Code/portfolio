@@ -79,6 +79,60 @@ a:hover, a:focus { text-decoration: underline; }
 .contact-info span { display:inline-block; transition:.2s; }
 .contact-info span:hover { letter-spacing:.5px; }
 
+/* ---------------- PUBLICATIONS ---------------- */
+.publications-card {
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  border: .12rem solid transparent;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, #fff,#fff9fa) padding-box,
+    linear-gradient(90deg, var(--accent), var(--accent-alt)) border-box;
+  box-shadow: var(--shadow-sm);
+}
+
+.publication-year {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #d96470;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+
+.publication-year::after {
+  content: "";
+  height: .1rem;
+  flex: 1;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.publication-list { margin: 0; padding-left: 1.25rem; }
+.publication-item { padding-left: .3rem; }
+.publication-item::marker { color: var(--accent); }
+.publication-title { color: var(--ink); font-weight: 700; }
+.publication-authors { display: block; margin-top: .3rem; font-size: .92rem; opacity: .8; }
+.publication-pdf {
+  display: inline-block;
+  margin-top: .7rem;
+  padding: .38rem .75rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffd9de, var(--accent));
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  box-shadow: var(--shadow-sm);
+  transition: .25s;
+}
+.publication-pdf:hover,
+.publication-pdf:focus { filter: brightness(1.05); text-decoration: none; transform: translateY(-1px); }
+
+@media (max-width: 40rem) {
+  .publications-card { padding: 1rem .9rem; }
+}
+
 /* ---------------- PRO CARDS ---------------- */
 .pro-cards { display:flex; flex-direction:column; gap: clamp(2rem, 6vh, 4rem); margin-top: 4rem;}
 
